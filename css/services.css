@@ -1,0 +1,39 @@
+.box{
+    width: 400px;
+    height: 300px;
+    background:rgb(199 210 254);
+    border-radius: 10PX;
+    margin: 20px;
+}
+.box img{
+    width: 300px;
+    height: 200px;
+    margin-top: 10PX;
+    border-radius: 5PX;
+}
+.box h1{
+ color: #6B21A8;
+}
+.services{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   align-content: center;
+   text-align: center;
+   margin-top: 100px;
+}
+
+/* Responsive Design */
+
+  @media (max-width: 1000px) {
+    .services{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+        margin-top: 100px;
+     } 
+     body{background-color: white;}
+  }

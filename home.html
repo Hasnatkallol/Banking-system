@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link rel="stylesheet" href="./css/home.css">
+  <link rel="stylesheet" href="./css/responsive-home.css">
+
+</head>
+<body>
+
+  <!-- Start Navigation Part -->
+   <div class="navigation-container">
+      <div class="logo">
+        <img src="./image/logo.png" alt="">
+      </div>
+      <div class="navigation" id="navigation">
+        <a class="active" href="home.html"><i class="fa-solid fa-puzzle-piece"></i> Dashboard</a>
+        <a href="transfer.html"><i class="fa-solid fa-money-bill-transfer"></i> B2B Transfer</a>
+        <a href="services.html"><i class="fa-solid fa-list"></i> Services</button></a>
+        <a href="analytics.html"><i class="fa-solid fa-chart-line"></i> Analytics</a>
+        <a href="card.html"><i class="fa-regular fa-credit-card"></i> Cards</button></a>
+        <a href="notification.html"><i class="fa-solid fa-bell"></i> Notifications</a>
+        <a href="setting.html"><i class="fa-solid fa-gear"></i> Settings</a>
+        <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+      </div>
+      <i class="fa-solid fa-bars" id="menu"></i>
+     
+   </div>
+
+   <!-- Start welcome Part -->
+<div class="welcome-part">
+    <div class="header">
+            <div class="welcome">
+              <img src="./image/Hasnat.jpg" alt="">
+             <div>
+               <h1>Hi Hasnat</h1>
+               <h3>Today is <span id="demo"></span></h3>
+            </div>
+            </div>
+            <div class="search-input">
+               <input type="text" name="" id="" placeholder="search">
+               <i class="fa-solid fa-bell"></i>
+            </div>     
+    </div>
+</div>
+
+<!-- Start Calculate Part -->
+<div class="calculate">
+               <div class="deposit">
+                   <div>
+                    <h4>Total Deposit</h4>
+                    <p id="totalDeposit"> $ 000</p>
+                   </div>
+                    <i class="fa-solid fa-money-bill-transfer"></i>
+                </div>
+      <div class="withdraw">
+               <div>
+                   <h4>Total Withdraw</h4>
+                   <p id="totalWithdraw"> $ 000</p>
+               </div>
+                    <i class="fa-solid fa-money-bill-transfer"></i>
+      </div>
+             <div class="total-amount">
+                 <div>
+                     <h4>Total Amount</h4>
+                     <p id="total-balance"> $ 000</p>
+                  </div>
+                     <i class="fa-solid fa-coins"></i>
+             </div>
+</div>
+
+
+      <div class="money-transfer">
+          <div class="deposit-money">
+                       <h2>Deposit Money</h2>
+                       <input type="number" name="number" placeholder="Deposit Amount" id="deposit-amount"><br/>
+                       <button id="deposit-btn">Deposit</button>
+                       <div id="successMessage" class="hidden">Successfully Deposited!</div>
+          </div>
+          <div class="withdraw-money">
+                       <h2>Withdraw Money</h2>
+                  <div style="display: flex;justify-content: space-around;">
+                       <!-- <input type="number" name="" id=""  placeholder="Acount Number"> -->
+                       <input type="number" name="number" placeholder="Withdraw Amount" id="withdraw-amount"><br/>
+                  </div>
+                       <button id="withdraw-btn">Withdraw</button>
+                  <div id="successMessage_2" class="hidden_2">Successfully Withdraw!</div>
+          </div>
+                  <div class="image">
+                      <img src="./image/graph.png" alt="">
+                      <h2 style="text-align: center;">Spent Summery</h2>
+                  </div>
+      </div>
+
+         <button style="margin-bottom: 30px;" id="view-history" class="history">View Transaction History</button>
+</div>
+
+
+  
+
+<script src="./js/home.js"></script>
+</body>
+</html>

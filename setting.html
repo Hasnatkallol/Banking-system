@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transfer Page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link rel="stylesheet" href="./css/home.css">
+  <link rel="stylesheet" href="./css/transfer-responsive.css">
+  <link rel="stylesheet" href="./css/responsive-home.css">
+  <link rel="stylesheet" href="./css/responsive-transfer-css">
+  <link rel="stylesheet" href="./css/transfer.css">
+  <link rel="stylesheet" href="./css/services.css">
+  <link rel="stylesheet" href="./css/analytics.css">
+  <link rel="stylesheet" href="./css/card.css">
+  <link rel="stylesheet" href="./css/notification.css">
+  <link rel="stylesheet" href="./css/setting.css">
+
+</head>
+<body>
+
+  <!-- Start Navigation Part -->
+   <div class="navigation-container">
+      <div class="logo">
+        <img src="./image/logo.png" alt="">
+      </div>
+      <div class="navigation" id="navigation">
+        <a href="home.html"><i class="fa-solid fa-puzzle-piece"></i> Dashboard</a>
+        <a  href="transfer.html"><i class="fa-solid fa-money-bill-transfer"></i> B2B Transfer</a>
+        <a href="services.html"><i class="fa-solid fa-list"></i> Services</button></a>
+        <a href="analytics.html"><i class="fa-solid fa-chart-line"></i> Analytics</a>
+        <a href="card.html"><i class="fa-regular fa-credit-card"></i> Cards</button></a>
+        <a href="notification.html"><i class="fa-solid fa-bell"></i> Notifications</a>
+        <a class="active" href="setting.html"><i class="fa-solid fa-gear"></i> Settings</a>
+        <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+      </div>
+      <i class="fa-solid fa-bars" id="menu"></i>
+     
+   </div>
+
+   <!-- Start welcome Part -->
+<div class="welcome-part">
+    <div class="header">
+            <div class="welcome">
+              <img src="./image/Hasnat.jpg" alt="">
+             <div>
+               <h1>Hi Hasnat</h1>
+               <h3>Today is <span id="demo"></span></h3>
+            </div>
+            </div>
+            <div class="search-input">
+               <input type="text" name="" id="" placeholder="search">
+               <i class="fa-solid fa-bell"></i>
+            </div>     
+    </div>
+</div>
+
+      
+  <!-- settings Part -->
+  <div class="settings-container">
+   
+    
+    <!-- Profile Section -->
+    <section>
+      <h2>Profile Settings</h2>
+      <form id="profile-form">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" placeholder="Enter your name">
+        
+        <label for="email">Email Address</label>
+        <input type="email" id="email" placeholder="Enter your email">
+        
+        <button type="button" onclick="saveProfile()">Save Profile</button>
+      </form>
+    </section>
+
+    <!-- Password Section -->
+    <section>
+      <h2>Change Password</h2>
+      <form id="password-form">
+        <label for="current-password">Current Password</label>
+        <input type="password" id="current-password" placeholder="Current password">
+        
+        <label for="new-password">New Password</label>
+        <input type="password" id="new-password" placeholder="New password">
+        
+        <button type="button" onclick="changePassword()">Update Password</button>
+      </form>
+    </section>
+
+    <!-- Notification Settings -->
+    <section>
+      <h2>Notification Preferences</h2>
+      <div class="notification-settings">
+        <label>
+          <input type="checkbox" id="email-notifications" checked>
+          Email Notifications
+        </label>
+        <label>
+          <input type="checkbox" id="sms-notifications">
+          SMS Notifications
+        </label>
+        <button type="button" onclick="updateNotifications()">Save Preferences</button>
+      </div>
+    </section>
+  </div>
+
+
+        
+      </div>
+    </div>
+        
+          
+
+    <script src="./js/setting.js"></script>
+    <script src="./js/home.js"></script>
+</body>
+</html>

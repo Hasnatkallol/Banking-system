@@ -1,0 +1,124 @@
+.transfer{
+    display: flex;
+    justify-content: center;
+}
+.total-amount {
+    display: flex;
+    justify-content: space-around;
+    margin-top: auto;
+    align-items: center;
+    height: 250px;
+    margin-top: 40px;
+    }
+.total-amount h4,p{
+      font-size: 35px;
+   }
+.total-amount i{
+    font-size: 50px;
+  }
+
+  .withdraw-money{
+    width: 400px;
+    /* height: 200px; */
+    height: 250px;
+    border-radius: 5px;
+    background-color: bisque;
+    /* background-color: white; */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 40px;
+}
+
+.withdraw-money{
+    text-align: center;
+    align-content: center;
+    
+   }
+.withdraw-money h2{
+       margin: 10px 0;
+    }
+.withdraw-money input{
+     margin-bottom: 20px;
+     margin-bottom: 20px;
+     width: 70%;
+     height: 50px;
+     border-radius: 5px;
+     padding-left: 10px;
+     border: 1px solid #ccc;
+   }
+.withdraw-money button{
+     margin-bottom: 20px;
+     margin-bottom: 20px;
+     font-size: 30px;
+     font-weight: bold;
+     text-transform: uppercase;
+     width: 70%;
+     height: 50px;
+     border-radius: 5px;
+     padding-left: 10px;
+     border: 1px solid #ccc;
+     background: linear-gradient(to right, rgb(101, 78, 163), rgb(234, 175, 200));
+   }
+
+
+   .container-secondary-transfer{
+    justify-content: center;
+    width: 70%;
+    height: 300px;
+    border: 1px solid rgb(241, 234, 234);
+    background-color: rgb(241, 234, 234);
+    margin: auto;
+    align-items: center;
+    margin-bottom: 10px;
+    overflow-y: scroll;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+.container-secondary-transfer::-webkit-scrollbar{
+  display: none;
+}
+
+#successMessage {
+  margin-top: 17px;
+  font-size: 1.2em;
+  color: white;
+  background-color: green;
+  border: 1px solid #c3e6cb;
+  padding: 10px;
+  border-radius: 5px;
+  display: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.clear-transfer{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.history-list{
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    /* height: 30px; */
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin: auto;   
+}
+.history-list li{  
+   font-weight: bold;
+    background-color: #6B21A8;
+    margin: 5px;
+    color: white;
+    /* height: 30px; */
+    height: 90px;
+    align-content: center;
+    border-radius: 5px;
+    font-size: 25px;
+}
